@@ -5,110 +5,92 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 
 BEGIN:VEVENT
-UID:laufende-buchhaltung@ug
+UID:laufende-buchhaltung@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20260101
-SUMMARY:Laufende Buchhaltung (UG)
-DESCRIPTION:Belege erfassen, Aufbewahrungsfristen beachten (10/6 Jahre).
+SUMMARY:Laufende Buchhaltung
+DESCRIPTION:Belege erfassen, Aufbewahrungsfristen: 10 Jahre für Buchhaltung und Abschlüsse und 6 Jahre für Geschäftsbriefe und E-Mails.
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:solvenzueberwachung@ug
+UID:solvenzueberwachung@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20260101
 SUMMARY:Laufende Solvenzüberwachung
-DESCRIPTION:Zahlungsfähigkeit prüfen. Insolvenzantrag max. 3 Wochen bei Insolvenzreife.
+DESCRIPTION:Zahlungsfähigkeit prüfen, Insolvenzantrag innerhalb von 3 Wochen bei Insolvenzreife.
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ust-jahreserklaerung@ug
+UID:ust-jahreserklaerung@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20270731
 SUMMARY:USt-Jahreserklärung abgeben
-DESCRIPTION:Frist 31.07. (mit Steuerberater Ende Februar des Folgejahres). Bei KUR formal, meist 0 €.
+DESCRIPTION:Bis zum 31.07. des Folgejahr (mit Steuerberater bis zum Ende Februar des Fortfolgejahres).
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:kst-jahreserklaerung@ug
+UID:kst-jahreserklaerung@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20270731
-SUMMARY:Körperschaftsteuer-Jahreserklärung abgeben
-DESCRIPTION:Frist 31.07. (mit Steuerberater Ende Februar des Folgejahres).
+SUMMARY:KSt-Jahreserklärung
+DESCRIPTION:Bis zum 31.07. des Folgejahr (mit Steuerberater bis zum Ende Februar des Fortfolgejahres).
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gewst-jahreserklaerung@ug
+UID:gewst-jahreserklaerung@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20270731
-SUMMARY:Gewerbesteuer-Jahreserklärung abgeben
-DESCRIPTION:Frist 31.07. (mit Steuerberater Ende Februar des Folgejahres).
+SUMMARY:GewSt-Jahreserklärung
+DESCRIPTION:Bis zum 31.07. des Folgejahr (mit Steuerberater bis zum Ende Februar des Fortfolgejahres).
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:jahresabschluss@ug
+UID:jahresabschluss@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20260930
-SUMMARY:Jahresabschluss erstellen (Bilanz + GuV)
-DESCRIPTION:Zeitnah nach Jahresende, typischerweise bis 30.09. des Folgejahres.
+SUMMARY:Jahresabschluss (Bilanz + GuV)
+DESCRIPTION:Zeitnah nach Jahresende, typischerweise bis zum 30.09. des Folgejahres.
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:gesellschafterbeschluss@ug
+UID:gesellschafterbeschluss@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20261015
-SUMMARY:Gesellschafterbeschluss Jahresabschluss
-DESCRIPTION:Feststellung Jahresabschluss, Gewinnverwendung, ggf. Rücklagenbildung (25 %).
+SUMMARY:Gesellschafterbeschluss
+DESCRIPTION:Zeitnah nach Jahresende, nach Jahresabschluss; Feststellung Jahresabschluss, Klärung der Gewinnverwendung, Klärung der Rücklagenbildung (25 %).
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:bundesanzeiger@ug
+UID:ruecklagenbildung@mbug
 DTSTAMP:20260101T090000Z
-DTSTART;VALUE=DATE:20261231
-SUMMARY:Offenlegung im Bundesanzeiger
-DESCRIPTION:Offenlegung des Jahresabschlusses. Frist: 12 Monate nach Geschäftsjahresende.
+DTSTART;VALUE=DATE:20261015
+SUMMARY:Rücklagenbildung
+DESCRIPTION:Zeitnah nach Jahresende, nach Gesellschafterbeschluss (25 %).
 RRULE:FREQ=YEARLY
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ihk-beitrag@ug
+UID:bundesanzeiger@mbug
+DTSTAMP:20270101T090000Z
+DTSTART;VALUE=DATE:20271231
+SUMMARY:Offenlegung im Bundesanzeiger
+DESCRIPTION:Bis zum 31.12. des Folgejahres.
+RRULE:FREQ=YEARLY
+END:VEVENT
+
+BEGIN:VEVENT
+UID:ihk-beitrag@mbug
 DTSTAMP:20260101T090000Z
 DTSTART;VALUE=DATE:20260331
-SUMMARY:IHK-Beitrag prüfen / bezahlen
-DESCRIPTION:Nach Beitragsbescheid der IHK (oft ermäßigt oder 0 € in den ersten Jahren).
-RRULE:FREQ=YEARLY
-END:VEVENT
-
-BEGIN:VEVENT
-UID:ust-trigger@ug
-DTSTAMP:20260101T090000Z
-DTSTART;VALUE=DATE:20260101
-SUMMARY:Prüfen: Wegfall Kleinunternehmerregelung?
-DESCRIPTION:USt-Voranmeldung & Abführung bei Wegfall oder Verzicht auf §19 UStG.
-RRULE:FREQ=YEARLY
-END:VEVENT
-
-BEGIN:VEVENT
-UID:lohnsteuer-trigger@ug
-DTSTAMP:20260101T090000Z
-DTSTART;VALUE=DATE:20260101
-SUMMARY:Trigger: Gehaltszahlung?
-DESCRIPTION:Ab Gehaltszahlung: LSt-Anmeldung, LSt-Abführung, ggf. Sozialversicherung.
-RRULE:FREQ=YEARLY
-END:VEVENT
-
-BEGIN:VEVENT
-UID:kapest-trigger@ug
-DTSTAMP:20260101T090000Z
-DTSTART;VALUE=DATE:20260101
-SUMMARY:Trigger: Gewinnausschüttung?
-DESCRIPTION:Bei Ausschüttung: Kapitalertragsteuer anmelden und abführen.
+SUMMARY:IHK-Beitrag Abführen
+DESCRIPTION:Nach Beitragsbescheid der IHK.
 RRULE:FREQ=YEARLY
 END:VEVENT
 
